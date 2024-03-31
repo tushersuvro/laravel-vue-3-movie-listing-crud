@@ -6,16 +6,25 @@ const routes = [
     {
         path: '/',
         name: 'movies.index',
-        component: MoviesIndex
+        component: MoviesIndex,
+        meta: { title:  'Movies Listing' }
     },
     {
         path: '/movies/create',
         name: 'movies.create',
-        component: MoviesCreate
+        component: MoviesCreate,
+        meta: { title:  'Create Movie' }
     }
 ]
 
-export default createRouter({
+const router = createRouter({
     history: createWebHistory(),
-    routes: routes
+    routes
 })
+
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title;
+    next();
+});
+
+export default router;

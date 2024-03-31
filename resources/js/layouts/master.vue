@@ -5,6 +5,9 @@
                     <div class="container" >
                     <ul class="navbar-nav">
                         <li class="nav-item" active-class="active">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item" active-class="active">
                             <router-link :to="{ name: 'movies.index' }" class="nav-link" href="#">Movies</router-link>
                         </li>
                         <li class="nav-item" active-class="active">
