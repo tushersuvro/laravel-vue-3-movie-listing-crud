@@ -7,13 +7,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body>
-<div class="app-body">
-    <main class="main">
-        <div style="padding-top: 20px" class="container" id="app">
-            <movies-index></movies-index>
-        </div>
-    </main>
-</div>
+<body id="app">
 </body>
 </html>

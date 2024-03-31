@@ -1,5 +1,5 @@
 <template>
-    <h1>My Movies </h1>
+    <h4 class="mt-2 mb-2">My Movies </h4>
     <table class="table">
         <thead class="thead-dark">
         <tr>
