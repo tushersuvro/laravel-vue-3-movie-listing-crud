@@ -11,6 +11,7 @@ class MovieController extends Controller
 {
     public function index() {
 //        return Movie::all();
-        return MovieResource::collection(Movie::paginate(10));
+        $movies = Movie::with('genre')->paginate(10);
+        return MovieResource::collection($movies);
     }
 }
